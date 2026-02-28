@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERDIYAK - Galerie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 300px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            color: white;
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MERDIYAK</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="galerie.html" class="active">Galerie</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="padding: 4rem 5%; text-align: center;">
+            <h2 class="section-title">Notre Galerie</h2>
+            <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto 3rem;">Découvrez nos baskets sous tous les angles</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Basket MERDIYAK">
+                    <div class="gallery-overlay">
+                        <h3>Collection Noire</h3>
+                        <p>Élégance intemporelle</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1539185445255-653ed0b8fc7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Basket MERDIYAK">
+                    <div class="gallery-overlay">
+                        <h3>Collection Blanche</h3>
+                        <p>Pureté et raffinement</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aea3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Basket MERDIYAK">
+                    <div class="gallery-overlay">
+                        <h3>Édition Limitée</h3>
+                        <p>Exclusivité absolue</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Basket MERDIYAK">
+                    <div class="gallery-overlay">
+                        <h3>Style Sport</h3>
+                        <p>Performance et style</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Basket MERDIYAK">
+                    <div class="gallery-overlay">
+                        <h3>Collection Automne</h3>
+                        <p>Tons chauds et élégants</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Basket MERDIYAK">
+                    <div class="gallery-overlay">
+                        <h3>Prestige Or</h3>
+                        <p>Le luxe ultime</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Basket MERDIYAK">
+                    <div class="gallery-overlay">
+                        <h3>Détails Artisanaux</h3>
+                        <p>Savoir-faire français</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Basket MERDIYAK">
+                    <div class="gallery-overlay">
+                        <h3>Collection Été</h3>
+                        <p>Légèreté et fraîcheur</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518002171953-9a5d3b2b390b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Basket MERDIYAK">
+                    <div class="gallery-overlay">
+                        <h3>Édition Spéciale</h3>
+                        <p>Collaboration artiste</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MERDIYAK</h3>
+                <p>L'élégance dans chaque pas. Baskets premium depuis 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <p><a href="produits.html">Produits</a></p>
+                <p><a href="galerie.html">Galerie</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Rue de la Mode, Paris</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@merdiyak.fr</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MERDIYAK. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
